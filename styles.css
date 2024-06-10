@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background: #ebebe3; 
+}
+
+header {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    color: #ebebe3;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #ebebe3;
+    text-decoration: none;
+}
+
+#portfolio {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#fav img {
+    margin: 0.2rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-width: calc(100% - 1rem); /* Three images per row */
+}
+.gallery img {
+    margin: 0.2rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-width: calc(50% - 1rem); /* Three images per row */
+}
+#cactus img {
+    margin: 0.2rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-width: calc(80% - 1rem); /* Three images per row */
+}
+
+.gallery img:hover {
+    transform: scale(1.01);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: calc(50% - 1rem); /* Two images per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 100%; /* One image per row */
+    }
+}
+
+footer {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    color: #ebebe3;
+    text-align: center;
+    padding: 1rem 0;
+}
